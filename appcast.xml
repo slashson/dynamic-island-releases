@@ -2,5 +2,44 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Dynamic Island</title>
+        <item>
+            <title>0.1</title>
+            <pubDate>Mon, 23 Nov 2026 00:45:26 +0100</pubDate>
+            <link>https://github.com/slashson/dynamic-island-releases/releases</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.1 — первая версия для друзей
+
+Остров вокруг выреза MacBook: музыка и плеер, громкость и яркость, наушники, батарея, раскладка, Caps Lock, запросы Claude Code.
+
+## Что нужно
+
+MacBook с вырезом (Apple Silicon), macOS 14 или новее. Проверено пока только на macOS 27 — на более старых что-то может выглядеть иначе.
+
+## Как поставить
+
+1. Скачай `DynamicIsland-0.1.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
+2. Открой его. macOS скажет, что не может проверить приложение, — у него пока нет подписи Apple. Нажми «Готово», открой Системные настройки → Конфиденциальность и безопасность и внизу нажми «Всё равно открыть». Так нужно сделать один раз.
+3. Разреши то, о чём спросит macOS:
+   - **Универсальный доступ** — чтобы громкость и яркость показывал остров, а не системное окно;
+   - **Bluetooth** — баннеры наушников и их заряд;
+   - **Запись системного звука** — полоски справа от музыки идут за звуком. Звук не записывается и никуда не отправляется.
+
+Значок острова появится в строке меню: там «Настройки…», пауза и выход.
+
+## Claude Code
+
+Настройки… → Claude Code → «Подключить». Остров добавит свои хуки в `~/.claude/settings.json` (чужие не тронет) и начнёт показывать вопросы, разрешения и планы. Там же — «Отключить».
+
+## Что стоит знать
+
+- В полноэкранных приложениях остров по умолчанию спрятан — это меняется в настройках.
+- Обновления приходят сами: приложение проверяет их раз в сутки. Вручную — «Проверить обновления…» в меню.
+- Если что-то не так, напиши и приложи файл `~/Library/Logs/DynamicIsland.log` — в нём нет названий треков и имён устройств.
+]]></description>
+            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.1/DynamicIsland-0.1.zip" length="5524866" type="application/octet-stream" sparkle:edSignature="644QWMQCQWgEZ+wTqUVAX0Qyzs9jm80csiA2C3dMfx856WJJQg8qL/TKhxaN+Butofq20pKeXKC1r4HrHlljDw=="/>
+        </item>
     </channel>
 </rss>
