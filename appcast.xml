@@ -3,24 +3,27 @@
     <channel>
         <title>Dynamic Island</title>
         <item>
-            <title>0.1</title>
-            <pubDate>Mon, 23 Nov 2026 00:45:26 +0100</pubDate>
+            <title>0.2</title>
+            <pubDate>Mon, 23 Nov 2026 01:07:54 +0100</pubDate>
             <link>https://github.com/slashson/dynamic-island-releases/releases</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.1 — первая версия для друзей
+            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.2
 
-Остров вокруг выреза MacBook: музыка и плеер, громкость и яркость, наушники, батарея, раскладка, Caps Lock, запросы Claude Code.
+## Что нового
 
-## Что нужно
+- **Новый значок приложения.**
+- **Полноэкранные приложения.** Над полноэкранным приложением прячется только музыка и плеер. Запросы Claude, громкость, наушники и остальные баннеры приходят всегда. Показывать плеер и там — Настройки… → Основные → «Плеер в полноэкранных приложениях».
+- **Обновления заметнее.** Когда выходит новая версия, остров сам говорит об этом, а в меню появляется «Установить обновление…».
+- **Наушники в окне громкости** показываются обычным значком, без 3D-модели.
 
-MacBook с вырезом (Apple Silicon), macOS 14 или новее. Проверено пока только на macOS 27 — на более старых что-то может выглядеть иначе.
+## Ставишь впервые
 
-## Как поставить
+Нужен MacBook с вырезом (Apple Silicon), macOS 14 или новее. Проверено пока только на macOS 27.
 
-1. Скачай `DynamicIsland-0.1.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
+1. Скачай `DynamicIsland-0.2.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
 2. Открой его. macOS скажет, что не может проверить приложение, — у него пока нет подписи Apple. Нажми «Готово», открой Системные настройки → Конфиденциальность и безопасность и внизу нажми «Всё равно открыть». Так нужно сделать один раз.
 3. Разреши то, о чём спросит macOS:
    - **Универсальный доступ** — чтобы громкость и яркость показывал остров, а не системное окно;
@@ -29,17 +32,11 @@ MacBook с вырезом (Apple Silicon), macOS 14 или новее. Пров�
 
 Значок острова появится в строке меню: там «Настройки…», пауза и выход.
 
-## Claude Code
+**Claude Code:** Настройки… → Claude Code → «Подключить». Остров добавит свои хуки в `~/.claude/settings.json` (чужие не тронет) и начнёт показывать вопросы, разрешения и планы.
 
-Настройки… → Claude Code → «Подключить». Остров добавит свои хуки в `~/.claude/settings.json` (чужие не тронет) и начнёт показывать вопросы, разрешения и планы. Там же — «Отключить».
-
-## Что стоит знать
-
-- В полноэкранных приложениях остров по умолчанию спрятан — это меняется в настройках.
-- Обновления приходят сами: приложение проверяет их раз в сутки. Вручную — «Проверить обновления…» в меню.
-- Если что-то не так, напиши и приложи файл `~/Library/Logs/DynamicIsland.log` — в нём нет названий треков и имён устройств.
+Если что-то не так, напиши и приложи файл `~/Library/Logs/DynamicIsland.log` — в нём нет названий треков и имён устройств.
 ]]></description>
-            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.1/DynamicIsland-0.1.zip" length="5524866" type="application/octet-stream" sparkle:edSignature="644QWMQCQWgEZ+wTqUVAX0Qyzs9jm80csiA2C3dMfx856WJJQg8qL/TKhxaN+Butofq20pKeXKC1r4HrHlljDw=="/>
+            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.2/DynamicIsland-0.2.zip" length="4281701" type="application/octet-stream" sparkle:edSignature="7rUatydyU2BDt59lhIQXQLbstSfRMPOK/udjFMOOs1On3qtMTEXXaXGzV2qUl3r2sqnzUWAPRZ8gbhr65Q/6CA=="/>
         </item>
     </channel>
 </rss>
