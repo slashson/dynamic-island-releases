@@ -3,26 +3,26 @@
     <channel>
         <title>Dynamic Island</title>
         <item>
-            <title>0.4</title>
-            <pubDate>Mon, 23 Nov 2026 23:49:28 +0100</pubDate>
+            <title>0.4.1</title>
+            <pubDate>Tue, 24 Nov 2026 09:36:18 +0100</pubDate>
             <link>https://github.com/slashson/dynamic-island-releases/releases</link>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>0.4</sparkle:shortVersionString>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.4
+            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.4.1
 
 ## Что нового
 
-- **Остров больше не падает при смене языка.** Если ты печатал ответ Claude прямо в острове и переключал язык клавишей Caps Lock, приложение закрывалось. Исправлено.
-- **Язык по 🌐 / Fn — без системного окна.** Если у тебя 🌐 (Fn) переключает раскладку, остров теперь делает это сам и показывает свой баннер, а список раскладок macOS посреди экрана больше не появляется. Работает, когда в Системных настройках → Клавиатура → «Нажатие клавиши 🌐» стоит «Сменить источник ввода». Проверено пока только на macOS 27: если после обновления Fn перестал менять язык, выключи Настройки… → Клавиатура → «Показывать смену раскладки» — Fn вернётся к macOS — и напиши мне.
-- **Серая рамка вокруг острова на macOS 26.** Обводка на тёмном фоне рисовалась там серым прямоугольником. Исправлено, но на macOS 26 и старше обводка пока выключена. Включить: Настройки… → Основные → «Обводка на тёмном фоне»; увидишь рамку вместо тонкой линии — выключи и напиши мне.
+- **Смена языка больше не теряется.** Если долго не переключал язык, первое нажатие Caps Lock (или 🌐 / Fn) могло пройти без баннера на острове, а баннер потом всплывал сам — например, по клику на рабочий стол. Исправлено.
+- **Чат Claude в VS Code открывается сразу.** Клик по значку Claude на острове раньше иногда ничего не делал: VS Code спрашивал «Allow 'Claude Code for VS Code' extension to open this URI?» в своём окне, часто на другом рабочем столе. Теперь остров сам разрешает это расширению — добавляет одну строку в настройки VS Code (и Cursor, если он есть), остальные настройки не трогает.
+- **Обводка у пустого выреза.** Тонкая серая линия на тёмном фоне теперь видна и когда наводишь курсор на пустой вырез.
 
 ## Ставишь впервые
 
 Нужен MacBook с вырезом (Apple Silicon), macOS 14 или новее. Проверено пока только на macOS 27.
 
-1. Скачай `DynamicIsland-0.4.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
+1. Скачай `DynamicIsland-0.4.1.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
 2. Открой его. macOS скажет, что не может проверить приложение, — у него пока нет подписи Apple. Нажми «Готово», открой Системные настройки → Конфиденциальность и безопасность и внизу нажми «Всё равно открыть». Так нужно сделать один раз.
 3. Разреши то, о чём спросит macOS:
    - **Универсальный доступ** — чтобы громкость и яркость показывал остров, а не системное окно;
@@ -33,9 +33,11 @@
 
 **Claude Code:** Настройки… → Claude Code → «Подключить». Остров добавит свои хуки в `~/.claude/settings.json` (чужие не тронет) и начнёт показывать вопросы, разрешения и планы.
 
+**Язык по 🌐 / Fn:** если в Системных настройках → Клавиатура → «Нажатие клавиши 🌐» стоит «Сменить источник ввода», язык переключает остров и показывает свой баннер вместо списка macOS посреди экрана. Если Fn перестал менять язык, выключи Настройки… → Клавиатура → «Показывать смену раскладки» — Fn вернётся к macOS — и напиши мне.
+
 Если что-то не так, напиши и приложи файл `~/Library/Logs/DynamicIsland.log` — в нём нет названий треков и имён устройств.
 ]]></description>
-            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.4/DynamicIsland-0.4.zip" length="4296186" type="application/octet-stream" sparkle:edSignature="Mu5Ju8HppoZFaMxoDZ6u3ohPU7zF/ql2ISr0t913bI2JzR7Er8WcyWhoaLqApV1pD+sE+g+2dkSw8kL6JK6yDA=="/>
+            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.4.1/DynamicIsland-0.4.1.zip" length="4311838" type="application/octet-stream" sparkle:edSignature="jkEfDBkzsKmcmGDOY2UaXSrsb0v2sdHhCC2P/XMV9PcAioqHTLFNQFpHVRYnnbNm40kJdu+FSz2KJ/VcnftwDg=="/>
         </item>
     </channel>
 </rss>
