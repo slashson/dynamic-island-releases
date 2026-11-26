@@ -3,26 +3,24 @@
     <channel>
         <title>Dynamic Island</title>
         <item>
-            <title>0.4.1</title>
-            <pubDate>Tue, 24 Nov 2026 09:36:18 +0100</pubDate>
+            <title>0.4.2</title>
+            <pubDate>Wed, 25 Nov 2026 22:30:05 +0100</pubDate>
             <link>https://github.com/slashson/dynamic-island-releases/releases</link>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.4.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.4.1
+            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.4.2
 
 ## Что нового
 
-- **Смена языка больше не теряется.** Если долго не переключал язык, первое нажатие Caps Lock (или 🌐 / Fn) могло пройти без баннера на острове, а баннер потом всплывал сам — например, по клику на рабочий стол. Исправлено.
-- **Чат Claude в VS Code открывается сразу.** Клик по значку Claude на острове раньше иногда ничего не делал: VS Code спрашивал «Allow 'Claude Code for VS Code' extension to open this URI?» в своём окне, часто на другом рабочем столе. Теперь остров сам разрешает это расширению — добавляет одну строку в настройки VS Code (и Cursor, если он есть), остальные настройки не трогает.
-- **Обводка у пустого выреза.** Тонкая серая линия на тёмном фоне теперь видна и когда наводишь курсор на пустой вырез.
+- **Клик по Claude открывает нужный чат в VS Code.** Если открыто несколько окон VS Code, клик по Claude на острове мог открыть пустой чат Claude Code в том окне, где ты сейчас, а не тот чат, о котором сообщил остров. Теперь остров сам находит окно, в котором идёт этот чат, и открывает его там.
 
 ## Ставишь впервые
 
 Нужен MacBook с вырезом (Apple Silicon), macOS 14 или новее. Проверено пока только на macOS 27.
 
-1. Скачай `DynamicIsland-0.4.1.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
+1. Скачай `DynamicIsland-0.4.2.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
 2. Открой его. macOS скажет, что не может проверить приложение, — у него пока нет подписи Apple. Нажми «Готово», открой Системные настройки → Конфиденциальность и безопасность и внизу нажми «Всё равно открыть». Так нужно сделать один раз.
 3. Разреши то, о чём спросит macOS:
    - **Универсальный доступ** — чтобы громкость и яркость показывал остров, а не системное окно;
@@ -37,7 +35,7 @@
 
 Если что-то не так, напиши и приложи файл `~/Library/Logs/DynamicIsland.log` — в нём нет названий треков и имён устройств.
 ]]></description>
-            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.4.1/DynamicIsland-0.4.1.zip" length="4311838" type="application/octet-stream" sparkle:edSignature="jkEfDBkzsKmcmGDOY2UaXSrsb0v2sdHhCC2P/XMV9PcAioqHTLFNQFpHVRYnnbNm40kJdu+FSz2KJ/VcnftwDg=="/>
+            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.4.2/DynamicIsland-0.4.2.zip" length="4314274" type="application/octet-stream" sparkle:edSignature="lJLiPcUR9263ycbuvBQ6u5ltrrpLhQoK7hDrp0DvY0w54rzhcpgMDmv+g66YnwyKtUXKRq1MWQ9hesqZescRDg=="/>
         </item>
     </channel>
 </rss>
