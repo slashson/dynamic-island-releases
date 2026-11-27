@@ -3,39 +3,39 @@
     <channel>
         <title>Dynamic Island</title>
         <item>
-            <title>0.4.2</title>
-            <pubDate>Wed, 25 Nov 2026 22:30:05 +0100</pubDate>
+            <title>0.4.3</title>
+            <pubDate>Fri, 27 Nov 2026 21:26:01 +0100</pubDate>
             <link>https://github.com/slashson/dynamic-island-releases/releases</link>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>0.4.2</sparkle:shortVersionString>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>0.4.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.4.2
+            <description sparkle:format="markdown"><![CDATA[# Dynamic Island 0.4.3
 
 ## Что нового
 
-- **Клик по Claude открывает нужный чат в VS Code.** Если открыто несколько окон VS Code, клик по Claude на острове мог открыть пустой чат Claude Code в том окне, где ты сейчас, а не тот чат, о котором сообщил остров. Теперь остров сам находит окно, в котором идёт этот чат, и открывает его там.
+- **Fn / 🌐 меняет язык через остров и на новых Mac.** Если в Системных настройках → Клавиатура никто ни разу не трогал «Нажатие клавиши 🌐», macOS сама решает, что делает Fn: с тремя и больше раскладками - меняет язык. Остров такую незаданную настройку раньше не трогал, поэтому по Fn сначала вылезал список раскладок macOS посреди экрана, а баннер на острове приходил только после. Теперь остров спрашивает у macOS, что на самом деле делает Fn, и переключает язык сам, без списка macOS.
 
 ## Ставишь впервые
 
 Нужен MacBook с вырезом (Apple Silicon), macOS 14 или новее. Проверено пока только на macOS 27.
 
-1. Скачай `DynamicIsland-0.4.2.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
-2. Открой его. macOS скажет, что не может проверить приложение, — у него пока нет подписи Apple. Нажми «Готово», открой Системные настройки → Конфиденциальность и безопасность и внизу нажми «Всё равно открыть». Так нужно сделать один раз.
+1. Скачай `DynamicIsland-0.4.3.zip` ниже, распакуй и перетащи «Dynamic Island» в «Программы». Запускать из «Загрузок» не надо: оттуда приложение не сможет обновляться.
+2. Открой его. macOS скажет, что не может проверить приложение - у него пока нет подписи Apple. Нажми «Готово», открой Системные настройки → Конфиденциальность и безопасность и внизу нажми «Всё равно открыть». Так нужно сделать один раз.
 3. Разреши то, о чём спросит macOS:
-   - **Универсальный доступ** — чтобы громкость и яркость показывал остров, а не системное окно;
-   - **Bluetooth** — баннеры наушников и их заряд;
-   - **Запись системного звука** — полоски справа от музыки идут за звуком. Звук не записывается и никуда не отправляется.
+   - **Универсальный доступ** - чтобы громкость и яркость показывал остров, а не системное окно (и чтобы язык по Fn переключал остров);
+   - **Bluetooth** - баннеры наушников и их заряд;
+   - **Запись системного звука** - полоски справа от музыки идут за звуком. Звук не записывается и никуда не отправляется.
 
 Значок острова появится в строке меню: там «Настройки…», пауза и выход.
 
 **Claude Code:** Настройки… → Claude Code → «Подключить». Остров добавит свои хуки в `~/.claude/settings.json` (чужие не тронет) и начнёт показывать вопросы, разрешения и планы.
 
-**Язык по 🌐 / Fn:** если в Системных настройках → Клавиатура → «Нажатие клавиши 🌐» стоит «Сменить источник ввода», язык переключает остров и показывает свой баннер вместо списка macOS посреди экрана. Если Fn перестал менять язык, выключи Настройки… → Клавиатура → «Показывать смену раскладки» — Fn вернётся к macOS — и напиши мне.
+**Язык по 🌐 / Fn:** если Fn у тебя меняет язык, его переключает остров и показывает свой баннер вместо списка macOS посреди экрана. Если Fn перестал менять язык, выключи Настройки… → Клавиатура → «Показывать смену раскладки» - Fn вернётся к macOS - и напиши мне.
 
-Если что-то не так, напиши и приложи файл `~/Library/Logs/DynamicIsland.log` — в нём нет названий треков и имён устройств.
+Если что-то не так, напиши и приложи файл `~/Library/Logs/DynamicIsland.log` - в нём нет названий треков и имён устройств.
 ]]></description>
-            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.4.2/DynamicIsland-0.4.2.zip" length="4314274" type="application/octet-stream" sparkle:edSignature="lJLiPcUR9263ycbuvBQ6u5ltrrpLhQoK7hDrp0DvY0w54rzhcpgMDmv+g66YnwyKtUXKRq1MWQ9hesqZescRDg=="/>
+            <enclosure url="https://github.com/slashson/dynamic-island-releases/releases/download/v0.4.3/DynamicIsland-0.4.3.zip" length="4315007" type="application/octet-stream" sparkle:edSignature="tR/FOxtX8aBxzJJHj/FnoPm+Q4TGfY1ByzpeMdWGGMrI2ALSb/uOBhPE6pIIM3KLdZGGw/OCe7xUN4oBmzSWBQ=="/>
         </item>
     </channel>
 </rss>
